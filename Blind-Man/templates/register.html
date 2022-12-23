@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Detection and Recognition</title>
+    <link rel="stylesheet" href="/static/styles/style.css"/>
+</head>
+<body>
+
+    <div class="register-page">
+        <h1 style="font-family: 'Roboto';">Authorize Members</h1>
+        <form action='/add' method="POST">
+            <label style="font-size: 20px;"><b>Enter New User Name*</b></label>
+            <input type="text" name="name" required>
+            <br>
+            <label style="font-size: 20px;"><b>Enter New Email Id*</b></label>
+            <input type="email" name="emailid" required>
+            <br>
+            <label style="font-size: 20px;"><b>Enter Phone*</b></label>
+            <input type="number" name="phonenum" required> 
+        </form>
+
+        <a style="text-decoration: none;max-width: 300px;" href="/add">
+            <input class="btn" type="submit" value="Register">
+        </a><br>
+
+        <input class="btn" type="submit" value="Home" onclick="window.open('/','_self')">
+    </div>
+    
+</body>
+</html>
